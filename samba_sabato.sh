@@ -59,8 +59,8 @@ sudo groupadd smbadminGR
 
 
 
-
-NEW_USERS="/home/luca/names.txt"
+NEW_USERS="${HOME}/CentOS8_samba_complete/names.txt"
+#NEW_USERS="/home/luca/names.txt"
 
 cat ${NEW_USERS} | \
 while read USER GROUP SMBPASS ; do
