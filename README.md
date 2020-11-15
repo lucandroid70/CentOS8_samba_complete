@@ -28,7 +28,8 @@ if you can change name and password in into line of script ==> names.txt
 
 This script, automatize install of samba server, create N user from file names.txt, and install Webmin
 
-If you not see samba-server launch this comand sudo setenforce 0 for selinux permissive
+If you not see samba-server launch this comand: 
+sudo setenforce 0     ====>      for selinux permissive
 
 
 #### webmin 
