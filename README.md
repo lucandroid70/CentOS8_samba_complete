@@ -2,6 +2,10 @@
 
 Luca S. Script sheel, for Install samba, with file names.txt into "name" "groups" "password" 
 
+install git with command  sudo dnf install git
+
+
+
 the file names.txt, located in this directoty "/home/luca/names.txt"
 
 if you can change in into line of script ==> NEW_USERS="/home/luca/names.txt"
