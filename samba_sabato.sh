@@ -86,11 +86,18 @@ sudo chgrp -R sambashareGR /samba270
 #sudo setsebool -P samba_export_all_ro=1 samba_export_all_rw=1
 #sudo semanage fcontext -a -t samba_share_t "/samba270(/.*)?"
 #sudo restorecon /samba270
-
 #sudo setsebool -P samba_export_all_ro=1 samba_export_all_rw=1
 #sudo semanage fcontext -a -t samba_share_t "/sambadmin(/.*)?"
 #sudo restorecon /sambadmin
 ##################################################### SELINUX OFF-ON ################################################
+
+
+sudo setsebool -P samba_enable_home_dirs on
+sudo chcon -t samba_share_t /samba270
+sudo setsebool -P samba_export_all_rw on
+
+
+
 
 #sudo chcon -t samba_share_t /sambadmin
 #sudo chcon -t samba_share_t /samba270
