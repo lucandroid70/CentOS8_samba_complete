@@ -39,5 +39,7 @@ You can now login to https://IP-OR-FQDN-NAME-YOUR-CENTOS:10000/
 ##### for selinux under line setting 
 
 sudo setsebool -P samba_enable_home_dirs on
+
 sudo chcon -t samba_share_t /samba270
+
 sudo setsebool -P samba_export_all_rw on
