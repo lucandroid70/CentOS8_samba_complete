@@ -89,7 +89,7 @@ while read USER GROUP SMBPASS ; do
    echo -e "${USER} = ${USER}" >> /etc/samba/smbusers
    smbpasswd -e ${USER}
    chown -R ${USER}:${GROUP} /samba270
-   chmod -R 2770 /samba270/
+   chmod -R 2770 /samba270/${USER}
    chgrp -R sambashareGR /samba270
 done
 
@@ -108,9 +108,9 @@ done
 ##################################################### SELINUX OFF-ON ################################################
 
 
-sudo setsebool -P samba_enable_home_dirs on
-sudo chcon -t samba_share_t /samba270
-sudo setsebool -P samba_export_all_rw on
+#sudo setsebool -P samba_enable_home_dirs on
+#sudo chcon -t samba_share_t /samba270
+#sudo setsebool -P samba_export_all_rw on
 
 
 
