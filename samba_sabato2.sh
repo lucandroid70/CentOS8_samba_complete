@@ -36,6 +36,7 @@ client max protocol = SMB3
     force create mode = 0660
     force directory mode = 2770
     valid users = @sambashareGR @smbadminGR
+    #Veto files = /*.exe/*.com/*.dll/*.bat/*.vbs/*.tmp/*.mp3/*.avi/*.mp4/*.wmv/*.wma/
 EOF
 
 
